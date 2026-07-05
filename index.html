@@ -65,6 +65,12 @@
           </div>
         </div>
 
+        <div class="hero-meta reveal" aria-label="艺点项目气质">
+          <span>Exhibition Gift</span>
+          <span>Limited Batch</span>
+          <span>Story To Object</span>
+        </div>
+
         <aside class="hero-note reveal" aria-label="艺点方法">
           <span>Studio Method</span>
           <strong>文化线索</strong>
@@ -75,6 +81,55 @@
         <a class="next-cue" href="#services" aria-label="前往服务内容">
           <span></span>
         </a>
+      </section>
+
+      <section class="curation-section" aria-labelledby="curation-title">
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span>文化线索</span>
+            <span>触感样本</span>
+            <span>包装结构</span>
+            <span>销售场景</span>
+            <span>收藏价值</span>
+            <span>品牌记忆</span>
+          </div>
+          <div class="marquee-track">
+            <span>文化线索</span>
+            <span>触感样本</span>
+            <span>包装结构</span>
+            <span>销售场景</span>
+            <span>收藏价值</span>
+            <span>品牌记忆</span>
+          </div>
+        </div>
+
+        <div class="curation-layout">
+          <div class="curation-copy reveal">
+            <p class="eyebrow">Curated Objects</p>
+            <h2 id="curation-title">把每件礼物做成一场小型展览</h2>
+            <p>
+              视觉要有一眼记住的姿态，材质要能被手指读懂，包装打开时要让故事自然发生。
+            </p>
+          </div>
+
+          <div class="curation-stack" aria-label="艺点策展维度">
+            <article class="curation-card reveal tilt-card">
+              <span>01</span>
+              <h3>先抓住一个文化切面</h3>
+              <p>用城市纹样、馆藏细节、品牌语气或个人纪念点确定核心叙事。</p>
+            </article>
+            <article class="curation-card reveal tilt-card">
+              <span>02</span>
+              <h3>再转成可触摸的工艺</h3>
+              <p>把纸、丝、瓷、金属与漆面组合成合适的触感和成本结构。</p>
+            </article>
+            <article class="curation-card reveal tilt-card">
+              <span>03</span>
+              <h3>最后进入真实场景</h3>
+              <p>考虑陈列、售卖、赠礼、运输和复购，让成品不止停在效果图里。</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="section intro-band" id="services" aria-labelledby="services-title">
@@ -195,8 +250,25 @@
           <button type="button" data-filter="private" aria-pressed="false">私人</button>
         </div>
 
+        <div class="work-stage reveal" aria-live="polite">
+          <div class="stage-media crop-one" data-stage-media aria-hidden="true"></div>
+          <div class="stage-copy">
+            <span data-stage-kicker>城市记忆系列</span>
+            <h3 data-stage-title>山水纹样伴手礼</h3>
+            <p data-stage-text>礼盒、书签与手账形成统一的城市礼赠语言，适合文旅发布和展会伴手礼。</p>
+          </div>
+        </div>
+
         <div class="work-grid" data-work-grid>
-          <article class="work-card reveal tilt-card" data-category="culture">
+          <article
+            class="work-card reveal tilt-card"
+            data-category="culture"
+            data-kicker="城市记忆系列"
+            data-title="山水纹样伴手礼"
+            data-text="礼盒、书签与手账形成统一的城市礼赠语言，适合文旅发布和展会伴手礼。"
+            data-crop="crop-one"
+            tabindex="0"
+          >
             <div class="work-image crop-one" aria-hidden="true"></div>
             <div class="work-copy">
               <p>城市记忆系列</p>
@@ -204,7 +276,15 @@
               <span>礼盒 / 书签 / 手账</span>
             </div>
           </article>
-          <article class="work-card reveal tilt-card" data-category="brand">
+          <article
+            class="work-card reveal tilt-card"
+            data-category="brand"
+            data-kicker="品牌年度礼赠"
+            data-title="茶事办公套装"
+            data-text="把品牌识别融入茶杯、桌面摆件与包装系统，适合客户答谢和商务来访。"
+            data-crop="crop-two"
+            tabindex="0"
+          >
             <div class="work-image crop-two" aria-hidden="true"></div>
             <div class="work-copy">
               <p>品牌年度礼赠</p>
@@ -212,7 +292,15 @@
               <span>茶杯 / 桌面摆件 / 包装系统</span>
             </div>
           </article>
-          <article class="work-card reveal tilt-card" data-category="private">
+          <article
+            class="work-card reveal tilt-card"
+            data-category="private"
+            data-kicker="私人纪念"
+            data-title="家族纹样丝巾"
+            data-text="以家族记忆与个人故事生成图案语言，完成真丝打样、定制卡片和礼盒交付。"
+            data-crop="crop-three"
+            tabindex="0"
+          >
             <div class="work-image crop-three" aria-hidden="true"></div>
             <div class="work-copy">
               <p>私人纪念</p>

@@ -207,13 +207,46 @@ function wireWorkFilters() {
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const filter = button.dataset.filter;
+      let firstVisible = null;
       setPressed(filterButtons, button);
 
       cards.forEach((card) => {
         const shouldShow = filter === "all" || card.dataset.category === filter;
         card.classList.toggle("is-hidden", !shouldShow);
+        if (shouldShow && !firstVisible) firstVisible = card;
       });
+
+      if (firstVisible) updateWorkStage(firstVisible);
     });
+  });
+}
+
+function updateWorkStage(card) {
+  const stage = document.querySelector(".work-stage");
+  if (!stage) return;
+
+  const media = stage.querySelector("[data-stage-media]");
+  const kicker = stage.querySelector("[data-stage-kicker]");
+  const title = stage.querySelector("[data-stage-title]");
+  const text = stage.querySelector("[data-stage-text]");
+
+  if (!(media && kicker && title && text)) return;
+
+  media.classList.remove("crop-one", "crop-two", "crop-three");
+  media.classList.add(card.dataset.crop || "crop-one");
+  kicker.textContent = card.dataset.kicker || "";
+  title.textContent = card.dataset.title || "";
+  text.textContent = card.dataset.text || "";
+
+  stage.classList.add("is-changing");
+  window.setTimeout(() => stage.classList.remove("is-changing"), 260);
+}
+
+function wireWorkStage() {
+  document.querySelectorAll(".work-card[data-title]").forEach((card) => {
+    card.addEventListener("pointerenter", () => updateWorkStage(card));
+    card.addEventListener("focus", () => updateWorkStage(card));
+    card.addEventListener("click", () => updateWorkStage(card));
   });
 }
 
@@ -296,9 +329,12 @@ function wirePointerLight() {
   window.addEventListener(
     "pointermove",
     (event) => {
+      const target = event.target instanceof Element ? event.target : null;
+      const isInteractive = Boolean(target?.closest("a, button, input, textarea, .tilt-card"));
       document.body.classList.add("has-pointer");
       document.documentElement.style.setProperty("--cursor-x", `${event.clientX}px`);
       document.documentElement.style.setProperty("--cursor-y", `${event.clientY}px`);
+      document.documentElement.style.setProperty("--cursor-scale", isInteractive ? "0.72" : "1");
     },
     { passive: true }
   );
@@ -331,6 +367,7 @@ setRevealDelays();
 observeReveals();
 wireCustomizer();
 wireWorkFilters();
+wireWorkStage();
 wireProcessTabs();
 wireMobileNav();
 wireLeadForm();
