@@ -6,7 +6,6 @@ const revealItems = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll("[data-counter]");
 const customStudio = document.querySelector(".custom-studio");
 const parallaxImage = document.querySelector("[data-parallax]");
-const heroAnimation = document.querySelector("[data-hero-animation]");
 
 const projectData = {
   city: {
@@ -90,20 +89,6 @@ function updateHeader() {
   if (parallaxImage) {
     parallaxImage.style.setProperty("--hero-shift", `${Math.min(window.scrollY * 0.08, 32)}px`);
   }
-}
-
-function respectMotionPreference() {
-  if (!heroAnimation || !heroAnimation.dataset.poster || !window.matchMedia) return;
-
-  const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const animatedSrc = heroAnimation.getAttribute("src");
-
-  function applyMotionPreference() {
-    heroAnimation.setAttribute("src", motionQuery.matches ? heroAnimation.dataset.poster : animatedSrc);
-  }
-
-  applyMotionPreference();
-  motionQuery.addEventListener?.("change", applyMotionPreference);
 }
 
 function animateCounters() {
@@ -379,7 +364,6 @@ function observeActiveSections() {
 }
 
 setRevealDelays();
-respectMotionPreference();
 observeReveals();
 wireCustomizer();
 wireWorkFilters();
