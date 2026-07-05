@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>艺点 | 文创产品设计与私人定制</title>
+    <meta
+      name="description"
+      content="艺点专注文创产品设计、品牌礼赠、私人定制与文化 IP 衍生开发，让文化灵感变成可收藏、可赠予、可使用的作品。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="艺点首页">
+        <span class="brand-mark">艺</span>
+        <span class="brand-text">
+          <strong>艺点</strong>
+          <small>YIDIAN STUDIO</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="主导航" data-nav>
+        <a href="#services">服务</a>
+        <a href="#custom">定制</a>
+        <a href="#work">案例</a>
+        <a href="#process">流程</a>
+        <a href="#contact">咨询</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="./assets/hero-products.png"
+          alt="艺点文创产品组合：礼盒、茶杯、书册、丝巾和书签"
+          data-parallax
+        />
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-ink" aria-hidden="true"></div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">文创产品设计 · 私人定制 · 品牌礼赠</p>
+          <h1 id="hero-title">艺点，把文化做成可以被带走的作品</h1>
+          <p class="hero-copy">
+            从城市记忆、企业故事到个人心意，艺点用设计策略、工艺打样与柔性供应链，把抽象灵感变成有质感的文创产品。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#custom">开始定制</a>
+            <a class="button ghost" href="#work">查看案例</a>
+          </div>
+          <div class="hero-metrics" aria-label="艺点服务数据">
+            <span><strong data-counter="128">0</strong>款定制方案</span>
+            <span><strong data-counter="36">0</strong>类工艺资源</span>
+            <span><strong data-counter="7">0</strong>天快速提案</span>
+          </div>
+        </div>
+
+        <aside class="hero-note reveal" aria-label="艺点方法">
+          <span>Studio Method</span>
+          <strong>文化线索</strong>
+          <strong>产品工艺</strong>
+          <strong>交付场景</strong>
+        </aside>
+
+        <a class="next-cue" href="#services" aria-label="前往服务内容">
+          <span></span>
+        </a>
+      </section>
+
+      <section class="section intro-band" id="services" aria-labelledby="services-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">What We Design</p>
+          <h2 id="services-title">从文化线索到商品体验</h2>
+          <p>
+            我们不只做“好看”的纪念品，而是把主题、受众、预算、工艺和交付场景一起设计，让每一件产品都能讲清楚自己的来处。
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal tilt-card">
+            <span class="service-index">01</span>
+            <h3>文旅与博物馆文创</h3>
+            <p>提炼地域文化、馆藏符号与故事线，延展为可售卖、可收藏、可传播的产品系列。</p>
+          </article>
+          <article class="service-card reveal tilt-card">
+            <span class="service-index">02</span>
+            <h3>企业品牌礼赠</h3>
+            <p>为周年庆、客户答谢、会议活动打造兼具品牌识别和日常使用价值的礼赠方案。</p>
+          </article>
+          <article class="service-card reveal tilt-card">
+            <span class="service-index">03</span>
+            <h3>私人定制与纪念礼</h3>
+            <p>围绕个人故事、家庭记忆和重要节点，定制小批量、高心意密度的专属作品。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section custom-section" id="custom" aria-labelledby="custom-title">
+        <div class="custom-layout">
+          <div class="custom-copy reveal">
+            <p class="eyebrow">Interactive Studio</p>
+            <h2 id="custom-title">先试一版你的定制方向</h2>
+            <p>
+              选择项目类型、工艺材质和数量，系统会动态给出初步预算区间与交付周期，方便你快速判断方向。
+            </p>
+            <div class="atelier-tags" aria-label="工作室能力">
+              <span>主题策划</span>
+              <span>图案开发</span>
+              <span>打样生产</span>
+            </div>
+          </div>
+
+          <div class="custom-studio reveal tilt-card" aria-label="定制配置器" data-active-material="paper">
+            <div class="studio-preview" data-preview>
+              <div class="preview-label">当前方案</div>
+              <h3 data-preview-title>城市伴手礼套装</h3>
+              <p data-preview-desc>适合文旅发布、城市会客厅、展会伴手礼。</p>
+              <div class="preview-tags">
+                <span data-preview-material>宣纸肌理</span>
+                <span data-preview-tone>雅致东方</span>
+                <span data-preview-quantity>500 件</span>
+              </div>
+            </div>
+
+            <form class="studio-controls" data-custom-form>
+              <fieldset>
+                <legend>项目类型</legend>
+                <div class="segmented" data-project-options>
+                  <button class="is-active" type="button" data-project="city" aria-pressed="true">城市伴手礼</button>
+                  <button type="button" data-project="museum" aria-pressed="false">馆藏衍生</button>
+                  <button type="button" data-project="brand" aria-pressed="false">企业礼赠</button>
+                  <button type="button" data-project="private" aria-pressed="false">私人纪念</button>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>工艺材质</legend>
+                <div class="swatches" data-material-options>
+                  <button class="swatch is-active" type="button" data-material="paper" aria-pressed="true">
+                    <span style="--swatch: #efe4d0"></span>宣纸
+                  </button>
+                  <button class="swatch" type="button" data-material="silk" aria-pressed="false">
+                    <span style="--swatch: #8ca897"></span>真丝
+                  </button>
+                  <button class="swatch" type="button" data-material="ceramic" aria-pressed="false">
+                    <span style="--swatch: #d9e5df"></span>陶瓷
+                  </button>
+                  <button class="swatch" type="button" data-material="lacquer" aria-pressed="false">
+                    <span style="--swatch: #a9231d"></span>漆面
+                  </button>
+                </div>
+              </fieldset>
+
+              <label class="range-row">
+                <span>预计数量</span>
+                <strong><output data-quantity-output>500</output> 件</strong>
+                <input data-quantity type="range" min="50" max="3000" value="500" step="50" />
+              </label>
+
+              <div class="estimate" aria-live="polite">
+                <span>
+                  <small>预算区间</small>
+                  <strong data-budget>¥ 3.8w - 6.2w</strong>
+                </span>
+                <span>
+                  <small>交付周期</small>
+                  <strong data-timeline>21-28 天</strong>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 id="work-title">适配不同场景的文创解决方案</h2>
+        </div>
+
+        <div class="work-tabs reveal" role="tablist" aria-label="案例筛选">
+          <button class="is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button type="button" data-filter="culture" aria-pressed="false">文旅</button>
+          <button type="button" data-filter="brand" aria-pressed="false">品牌</button>
+          <button type="button" data-filter="private" aria-pressed="false">私人</button>
+        </div>
+
+        <div class="work-grid" data-work-grid>
+          <article class="work-card reveal tilt-card" data-category="culture">
+            <div class="work-image crop-one" aria-hidden="true"></div>
+            <div class="work-copy">
+              <p>城市记忆系列</p>
+              <h3>山水纹样伴手礼</h3>
+              <span>礼盒 / 书签 / 手账</span>
+            </div>
+          </article>
+          <article class="work-card reveal tilt-card" data-category="brand">
+            <div class="work-image crop-two" aria-hidden="true"></div>
+            <div class="work-copy">
+              <p>品牌年度礼赠</p>
+              <h3>茶事办公套装</h3>
+              <span>茶杯 / 桌面摆件 / 包装系统</span>
+            </div>
+          </article>
+          <article class="work-card reveal tilt-card" data-category="private">
+            <div class="work-image crop-three" aria-hidden="true"></div>
+            <div class="work-copy">
+              <p>私人纪念</p>
+              <h3>家族纹样丝巾</h3>
+              <span>图案开发 / 真丝打样 / 定制卡片</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process" aria-labelledby="process-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">How It Works</p>
+          <h2 id="process-title">从一次沟通到一套成品</h2>
+        </div>
+
+        <div class="process-board reveal">
+          <div class="process-steps" role="tablist" aria-label="定制流程">
+            <button class="is-active" type="button" data-step="0" aria-selected="true">需求梳理</button>
+            <button type="button" data-step="1" aria-selected="false">概念提案</button>
+            <button type="button" data-step="2" aria-selected="false">打样优化</button>
+            <button type="button" data-step="3" aria-selected="false">量产交付</button>
+          </div>
+          <div class="process-detail" aria-live="polite">
+            <span data-process-count>01 / 04</span>
+            <h3 data-process-title>先把故事讲准确</h3>
+            <p data-process-text>
+              梳理品牌、文化符号、使用场景、预算和交付节点，确认产品方向与优先级。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Start A Project</p>
+          <h2 id="contact-title">把你的想法交给艺点</h2>
+          <p>告诉我们项目场景和时间节点，我们会在 1 个工作日内给出沟通方向。</p>
+        </div>
+
+        <form class="contact-form reveal" data-lead-form>
+          <label>
+            <span>称呼</span>
+            <input name="name" type="text" placeholder="例如：陈先生" required />
+          </label>
+          <label>
+            <span>联系方式</span>
+            <input name="contact" type="text" placeholder="手机号 / 微信 / 邮箱" required />
+          </label>
+          <label>
+            <span>项目需求</span>
+            <textarea name="message" rows="4" placeholder="想做什么产品、预计数量、使用场景或交付时间" required></textarea>
+          </label>
+          <button class="button primary" type="submit">提交咨询</button>
+          <p class="form-note" data-form-note>信息仅用于项目沟通，不会对外公开。</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 艺点文创设计</span>
+      <span>文化灵感 · 产品设计 · 私人定制</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
